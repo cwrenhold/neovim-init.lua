@@ -43,6 +43,8 @@ return require('packer').startup(function(use)
 	use('tpope/vim-fugitive')
     use('nvim-tree/nvim-tree.lua')
     use('nvim-tree/nvim-web-devicons')
+    use('feline-nvim/feline.nvim')
+    use('lewis6991/gitsigns.nvim')
 
 	-- LSP-zero
 	use {
