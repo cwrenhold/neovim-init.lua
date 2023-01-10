@@ -7,3 +7,10 @@ wk.setup({
         border = "double"
     }
 })
+
+wk.register({
+    p = {
+        f = { "Find file" },
+        v = { "Netrw" }
+    }
+}, { prefix = "<leader>"})
