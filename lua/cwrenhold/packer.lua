@@ -46,6 +46,7 @@ return require('packer').startup(function(use)
     use('feline-nvim/feline.nvim')
     use('lewis6991/gitsigns.nvim')
     use('folke/which-key.nvim')
+    use('ggandor/leap.nvim')
 
 	-- LSP-zero
 	use {
