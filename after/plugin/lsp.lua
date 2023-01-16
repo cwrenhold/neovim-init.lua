@@ -6,7 +6,7 @@ lsp.ensure_installed({
   'tsserver',
   'eslint',
   'sumneko_lua',
-  'rust_analyzer',
+  'omnisharp'
 })
 
 -- Fix Undefined global 'vim'
@@ -30,10 +30,11 @@ local cmp_mappings = lsp.defaults.cmp_mappings({
   ["<C-Space>"] = cmp.mapping.complete(),
 })
 
+cmp_mappings['<Tab>'] = cmp.mapping.confirm()
 -- disable completion with tab
 -- this helps with copilot setup
-cmp_mappings['<Tab>'] = nil
 cmp_mappings['<S-Tab>'] = nil
+cmp_mappings['<CR>'] = nil
 
 lsp.setup_nvim_cmp({
   mapping = cmp_mappings
@@ -42,10 +43,10 @@ lsp.setup_nvim_cmp({
 lsp.set_preferences({
     suggest_lsp_servers = false,
     sign_icons = {
-        error = 'E',
-        warn = 'W',
+        error = "✘",
+        warn = '▲',
         hint = 'H',
-        info = 'I'
+        info = '⚑'
     }
 })
 
