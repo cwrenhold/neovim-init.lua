@@ -2,7 +2,7 @@ require('rose-pine').setup({
     --disable_background = true
 })
 
-function ColorMyPencils(color) 
+function ColorMyPencils(color)
 	color = color or "night-owl"
 	vim.cmd.colorscheme(color)
 
@@ -10,7 +10,7 @@ function ColorMyPencils(color)
 	-- vim.api.nvim_set_hl(0, "NormalFloat", { bg = "none" })
 
     -- Disable italicised text
-    toDisableItalicisation = {
+    local toDisableItalicisation = {
         "Comment",
         "jsComment",
         "jsImport",
@@ -24,7 +24,7 @@ function ColorMyPencils(color)
         "shComment",
         "NERDTreeHelp"
     }
-    for k,v in pairs(toDisableItalicisation) do
+    for _, v in pairs(toDisableItalicisation) do
         vim.cmd(string.format([[highlight %s gui=NONE cterm=NONE]], v))
     end
 end

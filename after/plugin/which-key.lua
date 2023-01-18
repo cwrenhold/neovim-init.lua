@@ -34,5 +34,12 @@ wk.register({
     },
     t = {
         t = { "Open terminal in split" },
-    }
+    },
+    s = { "Substitute all instances of current word" }
 }, { prefix = "<leader>"})
+
+wk.register({
+    g = {
+        d = { "Go to definition" },
+    }
+})

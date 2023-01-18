@@ -51,4 +51,4 @@ vim.keymap.set("n", "<C-Right>", "<cmd>wincmd l<CR>", { silent = true })
 
 -- Terminal navigation
 vim.keymap.set("t", "<Esc>", "<C-\\><C-n>")
-vim.keymap.set("n", "<leader>tt", "<cmd>vsplit | terminal<CR>", { silent = true })
+vim.keymap.set("n", "<leader>tt", "<cmd>vsplit | wincmd l | terminal<CR>", { silent = true })
