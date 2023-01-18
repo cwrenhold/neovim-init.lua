@@ -39,5 +39,7 @@ wk.register({
 wk.register({
     g = {
         d = { "Go to definition" },
+        D = { "Go to declaration" },
+        i = { "Go to implementation" },
     }
 })
