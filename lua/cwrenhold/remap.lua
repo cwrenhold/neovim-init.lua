@@ -44,7 +44,11 @@ vim.keymap.set("n", "<leader>s", [[:%s/\<<C-r><C-w>\>/<C-r><C-w>/gI<Left><Left><
 -- vim.keymap.set("n", "<leader>x", "<cmd>!chmod +x %<CR>", { silent = true })
 
 -- Window navigation
-vim.keymap.set("n", "<C-Left>", ":wincmd h<CR>", { silent = true })
-vim.keymap.set("n", "<C-Down>", ":wincmd j<CR>", { silent = true })
-vim.keymap.set("n", "<C-Up>", ":wincmd k<CR>", { silent = true })
-vim.keymap.set("n", "<C-Right>", ":wincmd l<CR>", { silent = true })
+vim.keymap.set("n", "<C-Left>", "<cmd>wincmd h<CR>", { silent = true })
+vim.keymap.set("n", "<C-Down>", "<cmd>wincmd j<CR>", { silent = true })
+vim.keymap.set("n", "<C-Up>", "<cmd>wincmd k<CR>", { silent = true })
+vim.keymap.set("n", "<C-Right>", "<cmd>wincmd l<CR>", { silent = true })
+
+-- Terminal navigation
+vim.keymap.set("t", "<Esc>", "<C-\\><C-n>")
+vim.keymap.set("n", "<leader>tt", "<cmd>vsplit | terminal<CR>", { silent = true })

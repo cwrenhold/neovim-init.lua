@@ -16,5 +16,23 @@ wk.register({
     g = {
         s = { "Git status" },
         l = { "Git log" },
+    },
+    v = {
+        c = {
+            a = { "Code action" },
+        },
+        d = {
+            a = { "Open floating message" },
+        },
+        r = {
+            r = { "References" },
+            n = { "Rename" },
+        },
+        w = {
+            s = { "Workspace symbol" },
+        }
+    },
+    t = {
+        t = { "Open terminal in split" },
     }
 }, { prefix = "<leader>"})
