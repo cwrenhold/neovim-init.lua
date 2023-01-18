@@ -12,5 +12,9 @@ wk.register({
     p = {
         f = { "Find file" },
         v = { "Netrw" }
+    },
+    g = {
+        s = { "Git status" },
+        l = { "Git log" },
     }
 }, { prefix = "<leader>"})
