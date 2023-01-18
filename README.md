@@ -21,3 +21,9 @@ I've tweaked a few of the standard keymaps, for example control + left/down/up/r
 ## Plugin scripts
 
 In the [after](./after/plugin/) folder, you can find the configuration for specific plugins. In theory, these are logically grouped if they are related (e.g. for [lsp](./after/plugin/lsp.lua).
+
+### LSPs, Formatters, etc.
+
+You can check which LSPs are installed and running with the `:Mason` command. From there, you can manually install any additional LSPs, or see which ones have been automatically installed fro you. This will also be where LSPs will need to be updated from. Other tools are also available via `:Mason`, for example formatters.
+
+Some LSPs, for example omnisharp, will require you to have additional tools on your machine in order to install them. A common one is `unzip`, which is required by Omnisharp. You will need to install this outside of Neovim before you will be able to install an LSP which depends on this.
