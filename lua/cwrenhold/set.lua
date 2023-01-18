@@ -44,4 +44,5 @@ vim.opt.listchars = {
 vim.opt.list = true
 
 vim.opt.showbreak = '↪ '
+vim.opt.linebreak = true
 
