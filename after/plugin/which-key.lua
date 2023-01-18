@@ -21,9 +21,7 @@ wk.register({
         c = {
             a = { "Code action" },
         },
-        d = {
-            a = { "Open floating message" },
-        },
+        d = { "Open floating message" },
         r = {
             r = { "References" },
             n = { "Rename" },
