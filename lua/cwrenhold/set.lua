@@ -45,4 +45,7 @@ vim.opt.list = true
 
 vim.opt.showbreak = '↪ '
 vim.opt.linebreak = true
+vim.opt.breakindent = true
 
+vim.opt.title = true
+vim.opt.titlestring = "nvim | %<%t%M | %f%="
