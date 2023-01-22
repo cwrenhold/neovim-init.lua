@@ -32,14 +32,13 @@ vim.opt.updatetime = 50
 vim.opt.colorcolumn = "80"
 
 vim.opt.listchars = {
-
-  eol = '⤶',
-  space = '·',
-  trail = '␣',
-  nbsp = '␣',
-  extends = '❯',
-  precedes = '❮',
-  tab = '▸ ',
+    eol = '⤶',
+    space = '·',
+    trail = '␣',
+    nbsp = '␣',
+    extends = '❯',
+    precedes = '❮',
+    tab = '▸ ',
 }
 vim.opt.list = true
 
