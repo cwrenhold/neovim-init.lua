@@ -4,6 +4,13 @@ vim.keymap.set("n", "<leader>pv", vim.cmd.Ex)
 vim.keymap.set("v", "J", ":m '>+1<CR>gv=gv")
 vim.keymap.set("v", "K", ":m '<-2<CR>gv=gv")
 
+-- Move current line/current block up/down
+vim.keymap.set("n", "<M-Up>", "ddkP")
+vim.keymap.set("n", "<M-Down>", "ddp")
+vim.keymap.set("v", "<M-Up>", "dkPg`[v`]V")
+vim.keymap.set("v", "<M-Down>", "dpg`[v`]V")
+
+-- Re-centre screen after jumps
 vim.keymap.set("n", "J", "mzJ`z")
 vim.keymap.set("n", "<C-d>", "<C-d>zz")
 vim.keymap.set("n", "<C-u>", "<C-u>zz")
