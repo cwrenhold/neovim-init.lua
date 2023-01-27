@@ -35,7 +35,8 @@ wk.register({
     t = {
         t = { "Open terminal in split" },
     },
-    s = { "Substitute all instances of current word" }
+    s = { "Substitute all instances of current word" },
+    o = { "Open symbols outline" },
 }, { prefix = "<leader>"})
 
 wk.register({
