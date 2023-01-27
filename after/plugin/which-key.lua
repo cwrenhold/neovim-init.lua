@@ -11,6 +11,8 @@ wk.setup({
 wk.register({
     p = {
         f = { "Find file" },
+        g = { "Find text in files" },
+        a = { "Find text in all files (ignores .gitignore)" },
         v = { "Netrw" }
     },
     g = {
